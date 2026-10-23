@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Student Enrollment Form</title>
+</head>
+<body>
+
+    <h1> REGISTRATION PORTAL</h1>
+    <p>Kindly complete the form below to enroll as a new student.</p>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <!-- Matric Number first this time -->
+        <p>
+            <label for="matric_no">Matriculation Number:</label><br>
+            <input
+                type="text"
+                id="matric_no"
+                name="matric_no"
+                placeholder="e.g: 20243853"
+                required
+            >
+        </p>
+
+        <!-- Full Name -->
+        <p>
+            <label for="student_name">Student's Full Name:</label><br>
+            <input
+                type="text"
+                id="student_name"
+                name="student_name"
+                placeholder="e.g: orenuga daniel"
+                required
+            >
+        </p>
+
+        <!-- Gender moved up -->
+        <p>
+            <strong>Select Gender:</strong><br>
+            <input type="radio" id="male_option" name="student_gender" value="male" required>
+            <label for="male_option">Male</label>
+
+            <input type="radio" id="female_option" name="student_gender" value="female" required>
+            <label for="female_option">Female</label>
+        </p>
+
+        <!-- Department -->
+        <p>
+            <label for="dept_select">Choose Your Department:</label><br>
+            <select id="dept_select" name="dept_select" required>
+                <option value="" disabled selected>-- Pick a department --</option>
+                <option value="ict">Information and Communication Technology</option>
+                <option value="comp-sci">Computer Science</option>
+                <option value="eee">Electrical and Electronics Engineering</option>
+                <option value="physics">Physics</option>
+                <option value="chem">Chemistry</option>
+                <option value="cybersecurity">Cyber Security</option>
+                <option value="soft-eng">Software Engineering</option>
+                <option value="math">Mathematics</option>
+            </select>
+        </p>
+
+        <!-- Programme -->
+        <p>
+            <label for="prog_select">Study Programme:</label><br>
+            <select id="prog_select" name="prog_select" required>
+                <option value="" disabled selected>-- Choose a programme --</option>
+                <option value="nd">National Diploma (ND)</option>
+                <option value="hnd">Higher National Diploma (HND)</option>
+                <option value="degree">Bachelor's Degree</option>
+            </select>
+        </p>
+
+        <!-- Email -->
+        <p>
+            <label for="contact_email">Email Address:</label><br>
+            <input
+                type="email"
+                id="contact_email"
+                name="contact_email"
+                placeholder="e.g: danielorenuga@mail.com"
+                required
+            >
+        </p>
+
+        <!-- Phone -->
+        <p>
+            <label for="contact_phone">Contact Phone Number:</label><br>
+            <input
+                type="tel"
+                id="contact_phone"
+                name="contact_phone"
+                placeholder="e.g: 08134567890"
+                pattern="[0-9]{11}"
+                required
+            >
+        </p>
+
+        <!-- Submit button -->
+        <p>
+            <button type="submit">Submit Registration</button>
+        </p>
+
+    </form>
+
+    <hr>
+
+</body>
+</html>
